@@ -1,4 +1,6 @@
 {% extends 'blog/base.html' %}
+@login_required
+def post_new(request):
 
 {% block content %}
     {% for post in posts %}
